@@ -1,0 +1,35 @@
+.products {
+	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(3, 33%);
+	grid-column-gap: 10px;
+}
+
+.product {
+	padding: 15px;
+	max-width: 350px;
+	max-height: 200px;
+	border: 1px solid grey;
+	padding: 10px;
+	
+}
+
+.productPreview {
+	text-align: center;
+}
+
+.productPreview p {
+	text-align: right;
+	padding-right: 27px;
+}
+
+.productImage {
+	margin: auto;
+	max-width: 100px;
+}
+
+.image {
+	padding: 10px;
+	margin-bottom: 25px;
+	border: 1px solid grey;
+}

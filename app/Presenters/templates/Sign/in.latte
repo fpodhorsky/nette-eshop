@@ -1,0 +1,22 @@
+{block content}
+<div class="content">
+	<h1 n:block="title" class="logo">Login</h1>
+	<nav class="navbar">
+		<ul class="underlineEff">
+			<li><a n:href="Homepage:default" class="underlineEff">Homepage</a></li>
+			<li><a n:href="Eshop:products" class="underlineEff">Eshop</a></li>
+			<li><a n:href="Eshop:createProduct" n:if="$user->isLoggedIn()" class="underlineEff">Create product</a></li>
+			<li><a n:href="Post:create" n:if="$user->isLoggedIn()" class="underlineEff">Create article</a></li>
+			{if $user->isLoggedIn()}
+			<li><a n:href="Sign:out" class="underlineEff">Log Out</a></li>
+			{else}
+			<li><a n:href="Sign:in" class="underlineEff">Login</a></li>
+			{/if}
+		</ul>
+	</nav>
+	<div class="formMain">
+		{control signInForm}
+	</div>
+	
+	</div>
+</div>

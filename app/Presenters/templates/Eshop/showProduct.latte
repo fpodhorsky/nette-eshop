@@ -1,0 +1,22 @@
+{block content}
+
+<div class="content">
+	<p><a n:href="Eshop:products" class="back">Back to eshop</a></p>
+	<br>
+
+	
+	
+	<div class="post">
+		<img src="/nette-blog/www/{$product->picture}" class="image">
+		<h1 n:block="title" class="showHeader">{$product->title}</h1>
+		<h3>{$product->price} Kč</h3>
+		<h4>{$product->availability}</h4>
+		<div class="postContent">
+		{$product->description}
+		</div>
+	</div>
+	</div>
+
+	
+	</div>
+</div>

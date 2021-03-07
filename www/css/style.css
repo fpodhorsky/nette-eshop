@@ -1,0 +1,220 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto';
+	line-height: 1.5;
+}
+
+.content {
+	box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+	max-width: 1080px;
+	height: 100%;
+	margin: auto;
+	margin-top: 25px;
+	padding: 30px;
+}
+
+.logo {
+	border-bottom: 3px solid #2d2e2f;
+	margin: auto;
+	font-weight: 500;
+	padding: 25px;
+	max-width: 1000px;
+}
+
+.navbar {
+	max-width: 1000px;
+	margin: auto;
+	height: 45px;
+	border-bottom: 3px solid #2d2e2f;
+}
+
+.navbar ul {
+	display: flex;
+	padding: 7px;
+	justify-content: center;
+}
+
+.navbar a {
+	max-width: 50px;
+	padding: 10px;
+	margin: 0 30px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a.underlineEff {
+    position: relative;
+}
+
+a.underlineEff:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #2d2e2f;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.3s ease-in-out;
+}
+
+a.underlineEff:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.post {
+	max-width: 720px;
+	margin: auto;
+	padding-top: 25px;
+	border-bottom: 2px solid #2d2e2f;
+	text-align: justify;
+}
+
+.author {
+	display: flex;
+	justify-content: space-between;
+	max-width: 720px;
+	margin: auto;
+	padding: 25px;
+	border-bottom: 2px solid #2d2e2f;
+}
+
+.postContent {
+	padding: 10px 0;
+}
+
+a {
+	text-decoration: none;
+	color: #2d2e2f;
+}
+
+a:hover {
+	color: grey;
+}
+
+.back {
+	font-size: 15px;
+	font-weight: 300;
+	padding: 25px;
+}
+
+.showHeader {
+	margin: auto;
+}
+
+.editArticle {
+
+}
+
+.comments {
+	padding: 30px;
+}
+
+.comment {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #2d2e2f;
+}
+
+.commentName {
+	padding-top: 10px;
+}
+
+.formMain form th {
+	padding: 15px;
+}
+
+.formMain form td {
+	padding: 15px;
+}
+
+
+.formMain {
+	max-width: 720px;
+	padding: 25px;
+}
+
+.formMain input[type="text"] {
+	border:0;
+	border-bottom: 1px solid #555;  
+	background: transparent;
+	max-width: 250px;
+	padding: 8px 0 5px 0;
+	font-size: 16px;	
+}
+
+.formMain input[type="text"]:focus {
+	border: none;	
+	outline: none;
+	border-bottom: 1px solid #e74c3c;	
+}
+
+.text {
+	border:0;
+	border-bottom: 1px solid #555;  
+	background: transparent;
+	max-width: 250px;
+	padding: 8px 0 5px 0;
+	font-size: 16px;	
+}
+
+.text:focus {
+	border: none;	
+	outline: none;
+	border-bottom: 1px solid #e74c3c;	
+}
+
+.formMain input[type="email"] {
+	border:0;
+	border-bottom: 1px solid #555;  
+	background: transparent;
+	max-width: 250px;
+	padding: 8px 0 5px 0;
+	font-size: 16px;	
+}
+
+.formMain input[type="email"]:focus {
+	border: none;	
+	outline: none;
+	border-bottom: 1px solid #e74c3c;	
+}
+
+.formMain textarea {
+	background: transparent;
+	height: 200px;
+	max-width: 800px;
+	padding: 8px;
+	font-size: 16px;	
+}
+
+.formMain input[type="submit"] {
+	padding: 10px;	
+}
+
+.formMain input[type="submit"] {
+	color:#fff;
+	background-color: black;
+	outline: none;
+    border: 0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.formMain input[type="submit"]:focus {
+	box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+	background-color: grey;
+}

@@ -1,0 +1,40 @@
+{block content}
+
+<div class="content">
+	<p><a n:href="Homepage:default" class="back">Back to homepage</a></p>
+	<br>
+	<div class="date">{$post->created_at|date:'F j, Y'}</div>
+
+	<h1 n:block="title" class="showHeader">{$post->title}</h1>
+
+	<div class="post">
+		<div class="postContent">
+		{$post->content}
+		</div>
+	</div>
+
+
+	<div class="author">Author: {$post->author}
+	<a class="editArticle" n:href="Post:create" n:if="$user->isLoggedIn()">Edit article</a>
+	</div>
+
+	<div class="comments">
+	<h3>Write a comment</h3>
+
+	<div class="formMain">{control commentForm}</div>
+	</div>
+	<br>
+	<h2>Comments</h2>
+	<br>
+	<div>
+	{foreach $comments as $comment}
+		<p class="commentName"><b><a href="mailto:{$comment->email}" n:tag-if="$comment->email">
+			{$comment->name}
+			{$comment->surname}
+		</a></b></p>
+
+		<div  class="comment">{$comment->content}</div>
+	{/foreach}
+	</div>
+	</div>
+</div>
